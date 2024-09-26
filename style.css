@@ -1,0 +1,635 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --white-color: #ffffff;
+  --red: #e60012;
+  --light-grey: #f8f9f9;
+  --text-color-black: #484848;
+  --grey: #f9f8f9;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 100px;
+  color: #484848;
+}
+/* header css */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-text-color {
+  color: var(--red);
+}
+
+header {
+}
+header,
+.sub-header {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--text-color-black);
+}
+header {
+  background-color: var(--white-color);
+  height: 52px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.logo-and-search-container {
+  gap: 16px;
+}
+
+.nintendo-logo-container {
+  background-color: var(--red);
+  height: 52px;
+  width: 105px;
+}
+
+.search-container {
+  border-bottom: 1px solid rgb(72, 72, 72);
+  cursor: pointer;
+  height: 30px;
+}
+.search-icon-and-input-element {
+  gap: 4px;
+}
+.search-container input,
+.search-container select {
+  border: none;
+  outline: none;
+  font: inherit;
+}
+.search-icon-and-input-element {
+  flex-grow: 1;
+}
+.search-icon-and-input-element input {
+  width: 90%;
+}
+
+.right-side-of-nav-bar {
+  display: flex;
+  gap: 32px;
+  padding-right: 16px;
+}
+.right-side-of-nav-bar > div {
+  display: flex;
+  gap: 32px;
+}
+
+/* hover effect on the header */
+.right-side-of-nav-bar > div:hover span,
+.right-side-of-nav-bar > div:hover svg,
+.search-container select div:hover,
+.search-icon-and-input-element:hover svg,
+.search-icon-and-input-element:hover input::placeholder,
+select:hover {
+  color: var(--red);
+}
+
+.search-container:hover {
+  border-bottom: 1px solid #e60012;
+}
+
+/* subheader */
+
+.sub-header {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  position: relative;
+}
+
+div.my-nintendo-store-container {
+  color: var(--red);
+  border-bottom: 5px solid;
+}
+.sub-header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 850px;
+  width: 100%;
+  margin-inline: auto;
+}
+.sub-header > div > div {
+  padding-block: 11px;
+  
+  transition: all 0.25s ease-in-out;
+
+}
+.sub-header span + img {
+  width: 10px;
+}
+.sub-header > div > div .dropdown-arrow{
+  transform:rotate(180deg);
+  transition: all 0.25s ease-in-out;
+
+
+
+}
+.sub-header > div > div .sub-header-dropdown{
+  position: absolute;
+  top: 120%;
+  left: 0px;
+  background-color: #FFFEFE;
+  display: none;
+}
+.red-banner{
+  width: 101.9%;
+  height: 50px;
+  background-color: #e60012;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+
+}
+.red-banner svg{
+  padding-top: 10px;
+}
+.red-banner .close-icon-for-sub-header-dropdown{
+  position: absolute;
+  right: 0;
+  /* top: 10px; */
+
+
+}
+
+.games{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-content: start;
+  gap: 16px;
+  color: var(--text-color-black);
+
+  width: 98.1vw;
+
+ 
+
+}
+.games .heading{
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+
+}
+.games .heading svg{
+  color: var(--red);
+}
+.games ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.close-icon-for-sub-header-dropdown{
+ 
+}
+
+.games ul{
+  list-style-type: none;
+}
+.games>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.sub-header > div div {
+  gap: 4px;
+}
+
+
+
+
+
+
+.sub-header > div > div:hover {
+  color: var(--red);
+}
+
+/* free shipping and earn points section */
+
+.free-shipping-and-nintendo-points-container {
+  background-color: var(--light-grey);
+}
+.free-shipping-and-nintendo-points-container > div {
+  justify-content: space-between;
+
+  padding-block: 12px;
+  max-width: 850px;
+  width: 100%;
+  margin-inline: auto;
+}
+.free-shipping-and-nintendo-points-container img {
+  margin-right: 16px;
+}
+
+a {
+  color: var(--text-color-black);
+}
+.free-shipping a {
+  font-size: 14px;
+}
+.earn-points {
+  border-left: 1px solid black;
+  padding-left: 32px;
+}
+
+/* stardew valley game home page section*/
+
+.stardew-valley-game-home-page-section {
+  background-color: rgb(214, 240, 250);
+  padding-top: 2rem;
+  height: 646px;
+}
+
+.stardew-valley-game-home-page-section > div {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding: 32px 48px;
+  border-radius: 16px;
+  background-color: var(--white-color);
+  display: flex;
+  gap: 48px;
+  font-size: 12px;
+  color: #484848;
+  box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
+  padding-bottom: 80px;
+  /* check this property later */
+}
+.stardew-valley-img-container {
+  max-width: 657px;
+  margin-block: 16px;
+}
+.stardew-valley-img {
+  width: 100%;
+  border-radius: 16px;
+}
+.esrb-rating-container {
+  display: flex;
+  gap: 16px;
+  max-width: 410px;
+}
+
+.text-next-to-everyone-esrb-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.text-next-to-everyone-esrb-img div {
+  border: 1px solid;
+  width: 100%;
+}
+.text-next-to-everyone-esrb-img div + p {
+  align-self: flex-start;
+}
+
+.gold-coin-img {
+  width: 24px;
+}
+
+.stardew-valley-game-buying-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.nintendo-switch-text {
+  border-left: 1px solid var(--red);
+  padding-left: 12px;
+}
+.nintendo-switch-text + h1,
+.price {
+  font-size: 28px;
+  font-weight: 700;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gold-points-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  background-color: var(--red);
+
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 16px;
+  padding: 1rem;
+  gap: 8px;
+}
+
+/*  stardew game story section */
+
+.stardew-game-story-section {
+  padding-top: 100px;
+  background-color: var(--white-color);
+  text-align: justify;
+  padding-inline: 16px;
+}
+
+.stardew-game-story-section > div {
+  max-width: 1144px;
+  margin-inline: auto;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.story-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 1;
+}
+.last-para-of-story {
+  display: inline-block;
+  margin-block: 16px;
+}
+.more-story-text {
+  display: none;
+}
+
+.read-more-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-weight: 700;
+}
+.read-more-icon {
+  display: none;
+}
+.read-less-icon {
+  display: none;
+}
+
+.show-more .read-more-icon {
+  display: none;
+}
+.show-more .read-less-icon {
+  display: block;
+}
+.show-more-story-text .three-dot-in-story {
+  display: none;
+}
+.show-more-story-text .more-story-text {
+  display: block;
+}
+.read-more-container + span {
+  font-size: 12px;
+}
+
+.story-text-container .btn {
+  width: max-content;
+  font-weight: 700;
+  font-size: 20px;
+}
+.stardew-valley-img-of-story-section {
+}
+.stardew-valley-img-of-story-section {
+  max-width: 558px;
+  border-radius: 16px;
+  flex-shrink: 2;
+}
+
+/* ////////////////////////// */
+.info-about-stardew-section > div {
+  max-width: 1144px;
+  margin-inline: auto;
+  padding-top: 48px;
+  padding-inline: 16px;
+}
+.ESRB-rating-and-supported-devices-outer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 32px;
+}
+
+.ESRB-rating {
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  font-size: 12px;
+  /* max-width: 400px; */
+  min-height: 221px;
+}
+.everyone-esrb-img-and-text-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px 32px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
+  border-radius: 16px;
+}
+.supported-devices-outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: rgb(248, 248, 248);
+  padding: 16px 32px;
+  border-radius: 16px;
+
+  /* max-width: 400px; */
+  min-height: 221px;
+}
+.supported-devices-container {
+  display: flex;
+  gap: 16px;
+  padding-inline: 16px;
+}
+.supported-devices-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.supported-device-icon-container {
+  max-width: 150px;
+  width: 100%;
+  background-color: var(--text-color-black);
+  border-radius: 16px;
+  padding: 16px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-beloew-ESRB-rating-and-supported-devices-outer-container > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.info-beloew-ESRB-rating-and-supported-devices-outer-container > div span {
+  display: flex;
+  gap: 8px;
+
+  align-items: center;
+  padding-block: 8px;
+}
+
+.info-beloew-ESRB-rating-and-supported-devices-outer-container a {
+  color: #e60012;
+  font-weight: 700;
+}
+
+.pro-controller-hands-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 32px;
+  background-color: var(--grey);
+  border-radius: 16px;
+  margin-block: 100px;
+}
+.pro-controller-hands-section .details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pro-controller-hands-section .details img {
+  max-width: 200px;
+}
+.pro-controller-hands-section span {
+  font-size: 12px;
+}
+.pro-controller-hands-section a {
+  color: var(--red);
+}
+.learn-more-btn {
+  background-color: var(--red);
+  color: white;
+  padding: 8px 16px;
+  max-width: max-content;
+  border-radius: 12px;
+}
+
+.show {
+  display: block;
+}
+@media (width>1100px) {
+  .logo-and-search-container {
+    max-width: 565px;
+    width: 100%;
+  }
+  .search-container {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (width<=1100px) {
+  .stardew-valley-img-of-story-section {
+    max-width: 340px;
+  }
+  .supported-device-icon-container {
+    padding: 16px 32px;
+  }
+}
+
+@media (width<=950px) {
+  .supported-device-icon-container {
+    padding: 16px;
+  }
+}
+@media (width<=768px) {
+  .stardew-game-story-section > div {
+    flex-direction: column;
+  }
+  .stardew-valley-img-of-story-section {
+    max-width: 100%;
+    border-radius: unset;
+  }
+  .ESRB-rating-and-supported-devices-outer-container {
+    flex-direction: column;
+  }
+  .ESRB-rating-and-supported-devices-outer-container > div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .supported-device-icon-container {
+    padding: 16px 80px;
+  }
+}
+
+@media (width<=600px) {
+  .supported-device-icon-container {
+    padding: 16px 32px;
+    border-radius: 10px;
+  }
+}
+@media (width<=450px) {
+  .story-text-container .btn {
+    width: 100%;
+    font-size: 14px;
+    /* padding: 8px; */
+  }
+
+  .supported-device-icon-container {
+    padding: 12px;
+  }
+}
+
+@media (width<=1024px) {
+  header {
+    height: 46px;
+    overflow: hidden;
+  }
+  nav {
+    background-color: #e60012;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+  .nintendo-logo-container img {
+    width: 90px;
+  }
+
+  .search-container,
+  .right-side-of-nav-bar > div:first-child {
+    display: none;
+  }
+  .flag-container {
+    color: var(--white-color);
+  }
+  .sub-header {
+    display: none;
+  }
+  .free-shipping-and-nintendo-points-container > div {
+    justify-content: center;
+  }
+  .earn-points {
+    display: none;
+  }
+}
